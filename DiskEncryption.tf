@@ -1,7 +1,7 @@
 #data "azurerm_subscription" "current" {}
 
 resource "azurerm_policy_definition" "DiscEncDef" {
-  name         = "DiskEncryptiondefinition"
+  name         = "DiskEncryptiondefinition1"
   policy_type  = "Custom"
   mode         = "All"
   display_name = "CF: Disk Encryption"
@@ -50,7 +50,7 @@ PARAMETERS
 
 
 resource "azurerm_policy_assignment" "Diskencassignment" {
-  name                 = "Diskencassignment"
+  name                 = "Diskencassignment1"
   scope                = data.azurerm_subscription.current.id
   policy_definition_id =  azurerm_policy_definition.DiscEncDef.id
   description          = "Disk Encryption should Apply on VM"
