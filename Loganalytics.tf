@@ -1,7 +1,7 @@
 #data "azurerm_subscription" "current" {}
 
 resource "azurerm_policy_definition" "LogAnalyticsAgentVM" {
-  name         = "LogAnalyticsAgentVM"
+  name         = "LogAnalyticsAgentVM1"
   policy_type  = "Custom"
   mode         = "Indexed"
   description = " This policy audits any Windows/Linux virtual machines if the Log Analytics agent is not installed."
@@ -66,7 +66,7 @@ PARAMETERS
 
 
 resource "azurerm_policy_assignment" "LogAnalyticsVMagentassignment" {
-name                 = "LogAnalyticsVMagentassignment"
+name                 = "LogAnalyticsVMagentassignment1"
   scope                = data.azurerm_subscription.current.id
   policy_definition_id = azurerm_policy_definition.LogAnalyticsAgentVM.id
   description          = "CF:The Log Analytics agent should be installed on virtual machines"
