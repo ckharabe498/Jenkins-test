@@ -1,7 +1,7 @@
 #data "azurerm_subscription" "current" {}
 
 resource "azurerm_policy_definition" "notallowedresdef" {
-  name         = "NotAllowedResourceefinition"
+  name         = "NotAllowedResourceefinition1"
   policy_type  = "Custom"
   mode         = "All"
   display_name = "CF: Not allowed resource types"
@@ -57,7 +57,7 @@ PARAMETERS
 
 
 resource "azurerm_policy_assignment" "notallowedrespolicyassignment" {
- name                 = "Notallowedrespolicyassignment"
+ name                 = "Notallowedrespolicyassignment1"
   scope                = data.azurerm_subscription.current.id
   policy_definition_id = azurerm_policy_definition.notallowedresdef.id
   description          = "Not allowed resource types"
