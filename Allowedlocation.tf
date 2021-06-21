@@ -1,7 +1,7 @@
 data "azurerm_subscription" "current" {}
 
 resource "azurerm_policy_definition" "Allowedlocationdef" {
-  name         = "AllowedLocationdefinition"
+  name         = "AllowedLocationdefinition1"
   policy_type  = "Custom"
   mode         = "All"
   display_name = "CF:Allowed location North Europe and West Europe"
@@ -48,7 +48,7 @@ PARAMETERS
 
 
 resource "azurerm_policy_assignment" "Allowedlocationpolicyassignment" {
- name                 = "Allowedlocationpolicyassignment"
+ name                 = "Allowedlocationpolicyassignment1"
   scope                = data.azurerm_subscription.current.id
   policy_definition_id = azurerm_policy_definition.Allowedlocationdef.id
   description          = "Allowed location North europe and West Europe"
