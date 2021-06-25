@@ -5,10 +5,12 @@ variable "storage_account_name" {
 
 variable "resource_group_name" {
   type = string
+  default = "yogesh"
 }
 
 variable "region" {
   type = string
+  default = "west europe"
 }
 
 variable "tier" {
