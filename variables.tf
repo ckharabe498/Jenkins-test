@@ -1,5 +1,6 @@
 variable "storage_account_name" {
   type = string
+  default = "test-storage"
 }
 
 variable "resource_group_name" {
@@ -12,6 +13,7 @@ variable "region" {
 
 variable "tier" {
   type = string
+  default = ""
 }
 
 variable "account_replication_type" {
@@ -20,6 +22,7 @@ variable "account_replication_type" {
 
 variable "tags" {
   type = map
+  default = ""
 }
 variable "client_id" {}
 variable "client_secret" {}
