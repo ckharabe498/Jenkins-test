@@ -22,7 +22,7 @@ variable "account_replication_type" {
 
 variable "tags" {
   type = map
-  default = ""
+
 }
 variable "client_id" {}
 variable "client_secret" {}
