@@ -13,7 +13,7 @@ features {}
 }
 
 module "management_groups" {
-  source                              = "./storage-account"
+  source                              = "./Storage-account"
 storage_account_name = var.storage_account_name
 resource_group_name = var.resource_group_name
 region = var.region
