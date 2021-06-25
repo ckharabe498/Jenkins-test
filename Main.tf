@@ -13,7 +13,7 @@ features {}
 }
 
 module "management_groups" {
-  source                              = "./Storage-account"
+  source                              = "./Storage-account.tf"
 storage_account_name = var.storage_account_name
 resource_group_name = var.resource_group_name
 region = var.region
