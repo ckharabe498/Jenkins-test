@@ -7,11 +7,10 @@ tenant_id = var.tenant_id
 features {}
 }
 
- resource "azurerm_resource_group" "rg1" {
+ /*resource "azurerm_resource_group" "rg1" {
   name     = "chetan"
   location = "West Europe"
-}
-
+}*/
 module "azurerm_storage_account" {
   source                              = "./storage-account"
 
