@@ -3,7 +3,7 @@ variable "storage_account_name" {
   default = "teststorage"
 }
 
-/*variable "resource_group_name" {
+variable "resource_group_name" {
   type = string
   default = "chetan"
 }
@@ -11,7 +11,7 @@ variable "storage_account_name" {
 variable "region" {
   type = string
    default = "westeurope"
-}*/
+}
 
 variable "tier" {
   type = string
