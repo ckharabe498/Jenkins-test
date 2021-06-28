@@ -1,6 +1,6 @@
 variable "storage_account_name" {
   type = string
-  default = "teststorage"
+  default = "mystorage"
 }
 
 variable "resource_group_name" {
