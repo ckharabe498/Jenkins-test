@@ -8,8 +8,8 @@ features {}
 }
 
  resource "azurerm_resource_group" "storage" {
-  name     = "Yogesh"
-  location = "WestEurope"
+  name     = "chetan"
+  location = "West Europe"
 }
 
 module "management_groups" {
