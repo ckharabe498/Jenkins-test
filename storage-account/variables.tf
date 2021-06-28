@@ -5,7 +5,7 @@ variable "storage_account_name" {
 
 variable "resource_group_name" {
   type = string
-  default = "chetan"
+  default = "testrg1"
 }
 
 variable "region" {
