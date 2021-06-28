@@ -1,13 +1,12 @@
 
+
 resource "azurerm_storage_account" "storage" {
-  name                     = "test-storage"
-  resource_group_name      = "yogesh"
-  location                 = "West Europe"
-  account_tier             = "standerd"
-  account_replication_type = "lsr"
-  tags = {
-    env= "prod"
-  }
+  name                     = var.storage_account_name
+  resource_group_name      = var.resource_group_name
+  location                 = var.region
+  account_tier             = var.tier
+  account_replication_type = var.account_replication_type
+  tags = var.tags
 }
 variable "storage_account_name" {
   type = string
