@@ -2,6 +2,14 @@
     # This script has been tested and works fine with Terraform version above 1.0.0.
     required_version = "= 1.0.0"
 }
+provider "azurerm" {
+client_id = var.client_id
+client_secret = var.client_secret
+subscription_id = var.subscription_id
+tenant_id = var.tenant_id
+
+features {}
+}
  
   # Resource Group creation
  resource "azurerm_resource_group" "rg" {
