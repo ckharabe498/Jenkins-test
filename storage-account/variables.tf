@@ -1,6 +1,6 @@
 variable "storage_account_name" {
   type = string
-  default = "mystorage123"
+  default = "cbzyst745"
 }
 
 variable "resource_group_name" {
