@@ -8,7 +8,7 @@ features {}
 }
 
  resource "azurerm_resource_group" "rg1" {
-  name     = "testrg1"
+  name     = "chetan"
   location = "West Europe"
 }
 
