@@ -15,12 +15,12 @@ variable "region" {
 
 variable "tier" {
   type = string
-  default = "standerd"
+  default = "Standerd"
 }
 
 variable "account_replication_type" {
   type = string
-  default = "lrs"
+  default = "Lrs"
 }
 
 variable "tags" {
