@@ -11,8 +11,8 @@ features {}
   source                              = "./storage-account"
 
 }
-  module "azurerm_resource_group"{
-  
+  module "azurerm_log_Analytics"{
+  source = "./log-analytics"
 }
    
 variable "client_id" {}
