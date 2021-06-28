@@ -15,7 +15,7 @@ variable "region" {
 
 variable "tier" {
   type = string
-  default = "Standard Premium"
+  default = "Standard"
 }
 
 variable "account_replication_type" {
