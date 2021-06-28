@@ -10,13 +10,17 @@ variable "retention_in_days" {
 
 variable "tags" {
   description = "Map of tags to add all network components"
-  default     = {}
+  default     = {
+    env= "dev"
+  }
 }
 
 variable "region" {
   description = "The location/region where the resources will be created"
+  default = "westeurope"
 }
 
 variable "name" {
-description = "test"
+description = "resource name"
+  default = "test"
 }
