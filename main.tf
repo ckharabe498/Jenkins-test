@@ -14,6 +14,9 @@ features {}
   module "azurerm_log_Analytics"{
   source = "./log-analytics"
 }
+   module "azurerm_resource_group"{
+  source = "./RG"
+}
    
 variable "client_id" {}
 variable "client_secret" {}
