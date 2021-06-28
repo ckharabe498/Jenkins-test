@@ -3,7 +3,7 @@ variable "resource_group" {
     type            =       map(string)
     default         =       {
         "Shreyesh1" =       "West Europe"
-        "Chetan"    =       "West Europe"
+        "Chetan2"    =       "West Europe"
         "Yogesh"    =       "West Europe"
     }
 }
