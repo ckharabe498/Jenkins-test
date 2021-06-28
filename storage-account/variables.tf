@@ -1,6 +1,6 @@
 variable "storage_account_name" {
   type = string
-  default = "test-storage"
+  default = "teststorage"
 }
 
 variable "resource_group_name" {
@@ -10,17 +10,17 @@ variable "resource_group_name" {
 
 variable "region" {
   type = string
-   default = "West Europe"
+   default = "westeurope"
 }
 
 variable "tier" {
   type = string
-  default = "Standerd"
+  default = "standerd"
 }
 
 variable "account_replication_type" {
   type = string
-  default = "Lrs"
+  default = "lrs"
 }
 
 variable "tags" {
