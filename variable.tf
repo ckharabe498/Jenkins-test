@@ -28,3 +28,8 @@ variable "tags" {
   description = "Map the tags to all network components"
   type = map(string)
   }
+
+variable "client_id" {}
+variable "client_secret" {}
+variable "subscription_id" {}
+variable "tenant_id" {}
