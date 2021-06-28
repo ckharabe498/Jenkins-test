@@ -20,7 +20,7 @@ variable "tier" {
 
 variable "account_replication_type" {
   type = string
-  default = "lrs"
+  default = "LRS"
 }
 
 variable "tags" {
