@@ -8,7 +8,7 @@ ipeline {
         steps {
             checkout scm
             script {          
-                git branch: 'Storage-Account', credentialsId: 'Git', url: 'https://github.com/YogeshBaldha/Vantage.git'
+                git branch: 'main', credentialsId: 'Git', url: 'https://github.com/YogeshBaldha/Vantage.git'
                 }
             }
         }          
