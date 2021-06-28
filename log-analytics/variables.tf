@@ -18,5 +18,5 @@ variable "region" {
 }
 
 variable "name" {
-description = "Name of the resource"
+description = "test"
 }
