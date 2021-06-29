@@ -6,14 +6,14 @@ pipeline {
         steps {
             checkout scm
             script {          
-                git branch: 'Vnet-Peering', credentialsId: 'Git', url: 'https://github.com/YogeshBaldha/Vantage.git'
+                git branch: 'vnetpeering', credentialsId: 'Git', url: 'https://github.com/YogeshBaldha/Vantage.git'
                 }
             }
         }          
         stage('Terraform-init') {
             steps {
                     withCredentials([azureServicePrincipal(
-                    credentialsId: 'AzureScript',
+                    credentialsId: 'AzureScript','azure-SP',
                     subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
                     clientIdVariable: 'ARM_CLIENT_ID',
                     clientSecretVariable: 'ARM_CLIENT_SECRET',
@@ -27,7 +27,7 @@ pipeline {
         stage('Terraform-Plan') {
             steps {
                     withCredentials([azureServicePrincipal(
-                    credentialsId: 'AzureScript',
+                    credentialsId: 'AzureScript','Azure-SP',
                     subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
                     clientIdVariable: 'ARM_CLIENT_ID',
                     clientSecretVariable: 'ARM_CLIENT_SECRET',
@@ -43,7 +43,7 @@ pipeline {
         stage('Terraform-Apply') {
              steps {
                     withCredentials([azureServicePrincipal(
-                    credentialsId: 'Azure_Spn',
+                    credentialsId: 'AzureScript','Azure-SP',',
                     subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
                     clientIdVariable: 'ARM_CLIENT_ID',
                     clientSecretVariable: 'ARM_CLIENT_SECRET',
