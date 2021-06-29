@@ -13,7 +13,7 @@ pipeline {
         stage('Terraform-init') {
             steps {
                     withCredentials([azureServicePrincipal(
-                    credentialsId: 'AzureScript''azure-SP',
+                    credentialsId: 'AzureScript',
                     subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
                     clientIdVariable: 'ARM_CLIENT_ID',
                     clientSecretVariable: 'ARM_CLIENT_SECRET',
@@ -27,7 +27,7 @@ pipeline {
         stage('Terraform-Plan') {
             steps {
                     withCredentials([azureServicePrincipal(
-                    credentialsId: 'AzureScript''Azure-SP',
+                    credentialsId: 'AzureScript',
                     subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
                     clientIdVariable: 'ARM_CLIENT_ID',
                     clientSecretVariable: 'ARM_CLIENT_SECRET',
@@ -43,7 +43,7 @@ pipeline {
         stage('Terraform-Apply') {
              steps {
                     withCredentials([azureServicePrincipal(
-                    credentialsId: 'AzureScript''Azure-SP',',
+                    credentialsId: 'AzureScript',
                     subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
                     clientIdVariable: 'ARM_CLIENT_ID',
                     clientSecretVariable: 'ARM_CLIENT_SECRET',
